@@ -10,9 +10,15 @@ int main()
 	char* punteroCharDos;
     for (arraychar[5] = 0; arraychar[5] < 5; ++arraychar[5])
     {
+    	do{
+
     	printf("arraychar [%i]: %s \n",arraychar[5] ,&letra );
     	letra++;
+    	printf("imprimir\n");
+    	}
     }
+
+
     
 
     return 0;
