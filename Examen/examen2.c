@@ -3,45 +3,43 @@
 
 int main()
 {
-	int i=0;
-	char arraychar[i];
+	int j;
+	char arraychar[5];
 	char letra='a';
 	char* punteroChar=arraychar;
 	char* punteroCharDos=arraychar;
-
 	
-    for (i; i < 5; ++i)
-    {    	
-    	printf("primer elemento de arraychar [%i]: %s \n",i ,&letra );
-    letra++;
-    }
-    printf("primer elemento de punteroChar  %s\n",punteroChar  );
-    printf("primer elemento de punteroCharDos  %s\n", punteroCharDos );
-    printf("primer elemento de punteroChar  %s\n", punteroChar  );
-    printf("quinto elemento del array  %s\n" ,&arraychar[4]  );
-    
-    	/*for (arraychar[5] ; arraychar[5] < 1; ++arraychar[5])
-    {
-    	
-    	letra++;
-    }
+	for (int q = 0; q < 1; ++q)
+	{
+		
+		printf("me marca simbolos que se añaden o que no deberian salir \n");
 
-	printf("primer  elemento de arraychar :%c\n",arraychar[1]);
-    printf("primer elemento del punteroChar%s\n",punteroChar );
-    printf("primer elemento del punteroCharDos%s\n",punteroCharDos );
-    printf("quinto elemento del punteroChar%s\n",punteroChar );
-*/
-    return 0;
+		for (int j = 0; j < 5; ++j)
+		{
+		arraychar[j]=letra;
+		punteroChar[j]=letra;
+		punteroCharDos[j]=letra;
+		letra++;
+		
+			if(j>=0 && j<5)
+			{
+				//imprime los valores mediante el orden que esta j (llega saltar el 0 con el 4 por que hay intermedio)
+					printf("imprimir todos de puntero punteroCharDos [%d]: %s \n",j,&arraychar[j] );					
+			}
+			if (j==0)
+				{
+			printf("primer elemento de array [%d]: %s \n",j,&arraychar[j] );
+			printf("primer elemento de punteroChar [%d]: %s \n",j,&punteroChar[j] );
+			printf("primer elemento de punteroCharDos [%d]: %s\n",j,&punteroCharDos[j]);
+				}
+			if (j==4)
+				{		
+				printf("quinto elemento de array [%d]: %s \n",j,&arraychar[j] );
+				printf("quinto elemento de punteroChar [%d]: %s \n",j,&punteroChar[j] );
+				printf("quinto elemento de punteroCharDos [%d]: %s\n",j,&punteroCharDos[j]);
+				}
+
+		}
+	}
+	return 0;
 }
-
-
- // ----> Crear un puntero hacia un <<char>> de nombre "punteroCharDos" e
-	// inicializarlo con la dirección del primer elemento (index) del array "arrayChar".
-
-//----> Imprimir el contenido del quinto elemento del array "arrayChar"
-// ----> Imprimir el contenido del quinto elemento del puntero "punteroChar" con aritmética de punteros
-// ----> Imprimir el contenido del quinto elemento del puntero "punteroCharDos" con aritmética de punteros
-// ----> Imprimir el contenido de todos los elementos del puntero "punteroCharDos" con aritmética de punteros
-// usar una Estructura Repetitiva
-// ----> Imprimir el contenido de todos los elementos del puntero "punteroCharDos" con aritmética de punteros
-// usar una Estructura Repetitiva*/
