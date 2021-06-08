@@ -84,20 +84,14 @@ int main(int argc, char const *argv[])
 				printf("---------------------------------------------------------------\n");			
 				printf("\tArchio %s Abierto correctamente\n",nom_archivo);
 				printf("---------------------------------------------------------------\n\n");			
-				/*int c;
+				int c;
 				printf("\tlas palabras que tiene el documento son: \n");			
 				while((c=fgetc(ptrCf))!=EOF) 
 				{
 					putchar(c);
 					
 				}
-				printf("\n\n");*/
-				imprimir_vector(vector, numeros_desde_archivo);
-				ordBurbuja(vector, numeros_desde_archivo);
-				printf("\n\t----> Ascedente <----\n");
-				printf("Lista ordenada de %d elementos:\n\n", numeros_desde_archivo);
-				imprimir_vector(vector, numeros_desde_archivo);
-		
+				printf("\n\n");
 
 
 
