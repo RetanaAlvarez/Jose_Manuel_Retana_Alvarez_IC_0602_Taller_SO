@@ -25,23 +25,6 @@ int main(int argc, char const *argv[])
 	int vector[TAM_NUMEROS], i = 0;
 	int numeros_desde_archivo = 0;	
 	
-	do
-	{
-		printf("\tNombre del archivo donde guardara los datos:");
-		gets(nom_archivo);
-		if(crear_archivo(nom_archivo)){
-			printf("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
-			printf("\tEl archivo -> %s <- Fue creado EXITOSAMENTE.\n", nom_archivo);	
-			printf("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
-		}
-		else{
-			printf("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
-			printf("\tEl archivo -> %s <- NO pudo crearse.\n", nom_archivo);			
-			printf("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
-		}
-	}while(existe_arch );
-
-
 	do{
 		printf("\tIngresa el nombre del archivo donde viene letras o los parrafos \n\t(ejemplo 'letras.txt' con extension si tiene): ");
 		gets(nom_archivo);
