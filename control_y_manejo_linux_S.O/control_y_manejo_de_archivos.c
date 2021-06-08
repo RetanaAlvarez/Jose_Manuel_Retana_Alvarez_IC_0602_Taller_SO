@@ -89,9 +89,15 @@ int main(int argc, char const *argv[])
 				while((c=fgetc(ptrCf))!=EOF) 
 				{
 					putchar(c);
+					if (c == ' ')
+					{
+						printf("\n");
+					}
 					
 				}
 				printf("\n\n");
+				
+		
 
 
 
